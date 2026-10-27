@@ -54,18 +54,24 @@ app.post('/api/config/google-maps-key', (req, res) => {
   }
 });
 
-// Configure Direct SMTP Transporter (Fallback & Direct Verification)
-const smtpConfig = {
-  host: process.env.SMTP_HOST || 'smtp.gmail.com',
-  port: parseInt(process.env.SMTP_PORT || '465', 10),
-  secure: process.env.SMTP_SECURE === 'true' || process.env.SMTP_PORT === '465',
-  auth: {
-    user: process.env.SMTP_USER || 'taskflow.notification@gmail.com',
-    pass: (process.env.SMTP_PASS || 'yjrmgzksmxdawbmo').replace(/\s+/g, '')
-  }
-};
+// Configure Direct SMTP Transporter (Fallback & Direct Verification for Vercel Serverless)
+const SMTP_USER = (process.env.SMTP_USER || 'taskflow.notification@gmail.com').trim();
+const SMTP_PASS = (process.env.SMTP_PASS || 'yjrmgzksmxdawbmo').replace(/\s+/g, '');
+const SMTP_FROM = process.env.SMTP_FROM || `"LLB Real Estate Chennai" <${SMTP_USER}>`;
 
-const mailTransporter = nodemailer.createTransport(smtpConfig);
+const mailTransporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: SMTP_USER,
+    pass: SMTP_PASS
+  },
+  connectionTimeout: 8000,
+  greetingTimeout: 8000,
+  socketTimeout: 10000,
+  tls: {
+    rejectUnauthorized: false
+  }
+});
 
 // Helper function to build luxury 80% white / 20% black email HTML
 function buildLuxuryEmailHtml({ fullName, email, phone, propertyType, specificProperty, budget, location, clientRef, notes }) {
@@ -294,55 +300,49 @@ app.post('/api/register', async (req, res) => {
   console.log(`Location: ${location} | Budget: ${budget}`);
   console.log(`==========================================================`);
 
-  let automationStatus = { triggered: false, mode: 'pending', error: null };
+  let automationStatus = { triggered: false, mode: 'direct-smtp', error: null };
   let emailDispatched = false;
 
-  // Step A: Trigger Nineteen Automation (n8n Webhook)
-  const webhookUrl = process.env.N8N_WEBHOOK_URL || 'http://localhost:5678/webhook/llb-registration';
+  // Step 1: Guaranteed Direct SMTP Confirmation Email Dispatch FIRST (Rapid & Reliable on Vercel)
   try {
-    console.log(`Triggering Nineteen Automation at ${webhookUrl}...`);
-    const webhookResponse = await fetch(webhookUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(registrationData),
-      signal: AbortSignal.timeout(15000)
+    console.log(`[LLB REGISTRATION] Dispatching confirmation email directly via authenticated SMTP to ${email}...`);
+    const emailHtml = buildLuxuryEmailHtml(registrationData);
+    const info = await mailTransporter.sendMail({
+      from: SMTP_FROM,
+      to: email,
+      subject: `Welcome to LLB Real Estate Chennai — Registration Verified [Ref: ${clientRef}]`,
+      html: emailHtml
     });
-
-    if (webhookResponse.ok) {
-      const data = await webhookResponse.json().catch(() => ({}));
-      console.log(`✓ Nineteen Automation successfully executed and dispatched!`, data);
-      automationStatus = { triggered: true, mode: 'n8n-webhook', response: data };
-      emailDispatched = true;
-    } else {
-      console.warn(`Nineteen Automation returned status: ${webhookResponse.status}`);
-      automationStatus = { triggered: false, mode: 'n8n-error', status: webhookResponse.status };
-    }
-  } catch (err) {
-    console.warn(`Nineteen Automation webhook connection note: ${err.message}`);
-    automationStatus = { triggered: false, mode: 'n8n-unreachable', error: err.message };
+    console.log(`✓ Direct SMTP Email successfully dispatched! Message ID: ${info.messageId}`);
+    emailDispatched = true;
+    automationStatus.smtpDirect = true;
+    automationStatus.messageId = info.messageId;
+  } catch (smtpErr) {
+    console.error(`Direct SMTP Error:`, smtpErr.message);
+    automationStatus.smtpError = smtpErr.message;
   }
 
-  // Step B: Direct SMTP Dispatch
-  // If n8n was not triggered or as guaranteed direct delivery, dispatch via verified SMTP
-  if (!emailDispatched) {
-    try {
-      console.log(`Dispatching confirmation email directly via authenticated SMTP to ${email}...`);
-      const emailHtml = buildLuxuryEmailHtml(registrationData);
-      const info = await mailTransporter.sendMail({
-        from: process.env.SMTP_FROM || `"LLB Real Estate" <${process.env.SMTP_USER}>`,
-        to: email,
-        subject: `Welcome to LLB Real Estate Chennai — Registration Verified [Ref: ${clientRef}]`,
-        html: emailHtml
-      });
-      console.log(`✓ Direct SMTP Email successfully dispatched! Message ID: ${info.messageId}`);
-      emailDispatched = true;
-      automationStatus.smtpDirect = true;
-    } catch (smtpErr) {
-      console.error(`Direct SMTP Error:`, smtpErr.message);
-      automationStatus.smtpError = smtpErr.message;
-    }
+  // Step 2: Trigger Nineteen Automation (n8n Webhook) asynchronously without blocking response
+  const customWebhook = process.env.N8N_WEBHOOK_URL;
+  const isVercel = !!process.env.VERCEL;
+
+  // Avoid hanging on localhost:5678 if deployed on Vercel
+  if (customWebhook || !isVercel) {
+    const webhookUrl = customWebhook || 'http://localhost:5678/webhook/llb-registration';
+    fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(registrationData),
+      signal: AbortSignal.timeout(3000)
+    }).then(async (whRes) => {
+      if (whRes.ok) {
+        console.log(`✓ Nineteen Automation webhook successfully sent to ${webhookUrl}`);
+      } else {
+        console.warn(`Nineteen Automation webhook status: ${whRes.status}`);
+      }
+    }).catch((whErr) => {
+      console.warn(`Nineteen Automation non-blocking note: ${whErr.message}`);
+    });
   }
 
   return res.json({
@@ -425,7 +425,7 @@ app.post('/api/book-cab', async (req, res) => {
       `;
 
       await mailTransporter.sendMail({
-        from: process.env.SMTP_FROM || `"LLB Real Estate Concierge" <${process.env.SMTP_USER}>`,
+        from: SMTP_FROM,
         to: email,
         subject: `Confirmed: Free Luxury Cab for Site Inspection [Ref: ${cabRef}] — LLB Real Estate`,
         html: emailHtml
@@ -452,28 +452,29 @@ app.post('/api/book-cab', async (req, res) => {
   });
 });
 
-// 4. Diagnostic SMTP Test Endpoint
-app.post('/api/test-email', async (req, res) => {
-  const recipient = req.body.email || process.env.SMTP_USER;
+// 5. Diagnostic SMTP Test Endpoint (Supports both GET and POST for instant verification in browser)
+app.all('/api/test-email', async (req, res) => {
+  const recipient = req.query.email || req.body?.email || SMTP_USER;
   try {
     await mailTransporter.verify();
     const info = await mailTransporter.sendMail({
-      from: process.env.SMTP_FROM || `"LLB Real Estate" <${process.env.SMTP_USER}>`,
+      from: SMTP_FROM,
       to: recipient,
-      subject: `LLB Real Estate — SMTP Verification Test [Active]`,
+      subject: `LLB Real Estate — SMTP Verification Test [Operational]`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width:600px; margin:0 auto; border:2px solid #000; padding:30px; background:#fff;">
           <div style="background:#000; color:#fff; padding:15px; font-weight:bold; letter-spacing:2px; font-family:monospace;">
             LLB REAL ESTATE &bull; CHENNAI
           </div>
-          <h2 style="color:#000; margin-top:20px;">SMTP Mail Dispatch Fully Verified</h2>
+          <h2 style="color:#000; margin-top:20px;">SMTP Mail Dispatch Fully Operational</h2>
           <p style="color:#333; line-height:1.6;">
-            Your email configuration is fully operational. Any client who registers on your LLB Real Estate website will instantly receive their personalized Chennai property dossier.
+            Your email configuration is fully operational on Vercel Serverless. Any client who registers on your LLB Real Estate website will instantly receive their personalized Chennai property dossier.
           </p>
           <div style="background:#f8f9fa; border:1px solid #000; padding:12px; margin:15px 0; font-family:monospace; font-size:13px;">
-            Host: ${smtpConfig.host}<br>
-            User: ${smtpConfig.auth.user}<br>
+            Service: Gmail Authenticated SMTP<br>
+            Sender: ${SMTP_FROM}<br>
             Recipient: ${recipient}<br>
+            Platform: ${process.env.VERCEL ? 'Vercel Serverless Production' : 'Local Node Server'}<br>
             Timestamp: ${new Date().toISOString()}
           </div>
         </div>
@@ -483,14 +484,32 @@ app.post('/api/test-email', async (req, res) => {
     res.json({
       success: true,
       message: `Test email sent successfully to ${recipient}`,
-      messageId: info.messageId
+      messageId: info.messageId,
+      sender: SMTP_FROM,
+      recipient,
+      platform: process.env.VERCEL ? 'Vercel Serverless' : 'Local Node Server'
     });
   } catch (err) {
+    console.error('SMTP Test Error:', err.message);
     res.status(500).json({
       success: false,
-      error: err.message
+      error: err.message,
+      sender: SMTP_FROM,
+      recipient
     });
   }
+});
+
+// 6. Production Health Check Endpoint
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'healthy',
+    service: 'LLB Real Estate Chennai API',
+    platform: process.env.VERCEL ? 'Vercel Serverless' : 'Local Node Server',
+    smtpConfigured: !!SMTP_USER && !!SMTP_PASS,
+    smtpUser: SMTP_USER,
+    timestamp: new Date().toISOString()
+  });
 });
 
 // Start Express Server (Runs locally; exported for Vercel Serverless)
@@ -502,8 +521,8 @@ if (!process.env.VERCEL) {
     console.log(`Website URL:           http://localhost:${PORT}`);
     console.log(`Properties API:        http://localhost:${PORT}/api/properties`);
     console.log(`Registration API:      http://localhost:${PORT}/api/register`);
-    console.log(`SMTP User:             ${smtpConfig.auth.user}`);
-    console.log(`Automation Webhook:    ${process.env.N8N_WEBHOOK_URL}`);
+    console.log(`SMTP Sender:           ${SMTP_FROM}`);
+    console.log(`Automation Webhook:    ${process.env.N8N_WEBHOOK_URL || 'Disabled on Vercel'}`);
     console.log(`==========================================================\n`);
   });
 }
