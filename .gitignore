@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+
+# Vercel Deployment Artifacts
+.vercel/
+
+# Logs & Debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary Testing & Scratch Artifacts
+scratch/
+carto_chennai.png
+carto_voyager.png
+esri_streets.png
+esri_streets_chennai.jpg
+esri_topo.png
+esri_topo_chennai.jpg
+osm.png
+osm_chennai.png
+osm_fr.png
+apply-responsive-css.js

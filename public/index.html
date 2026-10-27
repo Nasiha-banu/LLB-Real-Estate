@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLB Real Estate — Chennai Prime Land &amp; Luxury Housing</title>
+  <meta name="description" content="LLB Real Estate — Exclusive Titled Land Parcels & Bespoke Luxury Residences in Chennai and across India. TN RERA & CMDA certified.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- High-Performance WebGL 3D Map Engine: MapLibre GL JS (Local Fast Assets with Multi-CDN Redundancy) -->
+  <link rel="stylesheet" href="maplibre/maplibre-gl.css" />
+  <script src="maplibre/maplibre-gl.js"></script>
+  <script>
+    if (typeof maplibregl === 'undefined') {
+      document.write('<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" />');
+      document.write('<script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"><\/script>');
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="black-landing-body">
+
+  <!-- Ambient Monochrome Stardust Particles Canvas -->
+  <canvas id="ambientStarsCanvas"></canvas>
+
+  <!-- Top Luxury Navigation Bar (Pure Black & White Theme) -->
+  <header class="black-landing-navbar">
+    <div class="container black-nav-container">
+      
+      <!-- Impressive Chrome Vector Crest (Left) -->
+      <a href="index.html" class="logo-impressive-link">
+        <svg class="nav-crest-svg" viewBox="0 0 110 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="llbGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF8E7" />
+              <stop offset="25%" stop-color="#E5C178" />
+              <stop offset="65%" stop-color="#C5A059" />
+              <stop offset="100%" stop-color="#8F6E28" />
+            </linearGradient>
+            <linearGradient id="llbPlatinum" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF" />
+              <stop offset="50%" stop-color="#E2E8F0" />
+              <stop offset="100%" stop-color="#94A3B8" />
+            </linearGradient>
+            <linearGradient id="llbShieldDark" x1="50%" y1="0%" x2="50%" y2="100%">
+              <stop offset="0%" stop-color="#0E172A" />
+              <stop offset="100%" stop-color="#020617" />
+            </linearGradient>
+          </defs>
+
+          <!-- Luxury Shield Backing (Midnight Obsidian) -->
+          <path d="M55 4 L102 34 V74 C102 82 96 86 88 86 H22 C14 86 8 82 8 74 V34 Z" fill="url(#llbShieldDark)" stroke="url(#llbGoldGrad)" stroke-width="2.2" />
+
+          <!-- Architectural Luxury Mansion / Home Roof (Clear House Representation) -->
+          <path d="M55 10 L94 38 H83 L55 18 L27 38 H16 Z" fill="url(#llbGoldGrad)" />
+          <rect x="71" y="14" width="5.5" height="11" fill="url(#llbGoldGrad)" rx="1" />
+
+          <!-- Bold, Crisp & Visibly Clear Monogram: L L B -->
+          <!-- First 'L' -->
+          <path d="M26 44 V73 H39" stroke="url(#llbPlatinum)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+          <!-- Second 'L' -->
+          <path d="M44 44 V73 H57" stroke="url(#llbPlatinum)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+          <!-- Letter 'B' -->
+          <path d="M63 44 V73 H74 C80 73 83.5 69.5 83.5 65 C83.5 61 80.5 58.5 74 58.5 H63 M63 58.5 H73 C78.5 58.5 82 55.5 82 51.5 C82 47.5 78 44 72 44 H63" stroke="url(#llbGoldGrad)" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+          <!-- Clear Title Property Foundation Line -->
+          <line x1="20" y1="78" x2="90" y2="78" stroke="url(#llbGoldGrad)" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-brand-title" style="color:#FFF;">LLB REAL ESTATE</span>
+          <span class="nav-brand-sub" style="color:#C5A059;">CHENNAI &bull; LUXURY HOMES &amp; LAND</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links Across Website (100% Complete & Accessible on Mobile & Desktop) -->
+      <nav class="black-nav-links" id="blackNavLinks">
+        <a href="index.html" class="black-nav-tab active">
+          🏡 Home
+        </a>
+        <a href="about.html" class="black-nav-tab">
+          🏛️ About Us
+        </a>
+        <a href="map.html" class="black-nav-tab">
+          🗺️ Location Map
+        </a>
+        <a href="properties.html" class="black-nav-tab">
+          🏰 Properties (14)
+        </a>
+        <a href="javascript:void(0)" onclick="openRegistrationModalDirect()" class="black-nav-tab">
+          📋 Client Registration
+        </a>
+
+        <!-- Mobile-Exclusive VIP Action Cards inside Drawer -->
+        <div class="mobile-nav-actions-wrap">
+          <button class="mobile-nav-cab-card" onclick="openFreeCabModal('Mobile Nav Site Visit'); closeMobileNav();">
+            <span class="mobile-cab-emoji">🚕</span>
+            <div class="mobile-cab-info">
+              <span class="mobile-cab-title">Book Free VIP Cab Visit</span>
+              <span class="mobile-cab-desc">Private Chauffeur Pick &amp; Drop &bull; Chennai</span>
+            </div>
+            <span class="mobile-free-pill">100% FREE</span>
+          </button>
+          <button class="mobile-nav-dossier-card" onclick="openRegistrationModalDirect(); closeMobileNav();">
+            <span class="mobile-cab-emoji">🔒</span>
+            <div class="mobile-cab-info">
+              <span class="mobile-cab-title">Confidential Plot Dossier</span>
+              <span class="mobile-cab-desc">RERA Clear Titles &amp; Instant Pricing</span>
+            </div>
+            <span class="mobile-verified-pill">VERIFIED</span>
+          </button>
+          <a href="tel:+919840012345" class="mobile-nav-call-link">
+            <span>📞 Direct VIP Concierge: +91 98400 12345</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions-cluster">
+        <button class="btn-cab-nav" onclick="openFreeCabModal('General Site Visit')">
+          <span class="cab-icon">🚕</span>
+          <span class="cab-label">Free Cab Visit</span>
+        </button>
+        <button class="btn btn-white btn-sm btn-dossier-nav" onclick="openRegistrationModalDirect()">Private Dossier</button>
+        <button class="nav-toggle black-toggle" id="blackNavToggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleBlackMobileNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT: PRESTIGE BANNER + 3D INTERACTIVE MANSION + STATS + QUICK NAV
+       ========================================================================== -->
+  <main class="black-landing-container">
+    
+    <!-- Hero Header Block (In White & Black Shades) -->
+    <div class="landing-hero-block">
+      <div class="landing-prestige-banner">
+        <a href="#landingMapSection" class="landing-prestige-badge" title="Explore Chennai & India Real Estate Map">
+          <span class="badge-dot"></span>
+          <span>ESTABLISHED 2026 &bull; CHENNAI &bull; TN RERA CERTIFIED ADVISORY</span>
+        </a>
+      </div>
+      <h1 class="landing-hero-title">
+        Curated Clear-Title Land Parcels &amp; Luxury Residences
+      </h1>
+      <p class="landing-hero-lead">
+        Chennai's premier private acquisitions advisory. Specializing in legally scrutinized beachfront estates, elite residential plots, and bespoke architectural homes with transparent INR valuations and complimentary VIP chauffeur inspection.
+      </p>
+      <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-bottom:8px;">
+        <a href="#landingMapSection" class="btn btn-white btn-sm">🗺️ Explore Interactive Map &rarr;</a>
+        <a href="properties.html" class="btn btn-outline btn-sm">🏰 Browse 14 Verified Estates &rarr;</a>
+        <button class="btn btn-outline btn-sm" onclick="openFreeCabModal('Landing Hero Site Visit')">🚕 Book Free VIP Cab</button>
+      </div>
+    </div>
+
+    <!-- Full Page Premium Interactive Mansion Showcase (3D Tilt & Perspective Switcher) -->
+    <section class="black-mansion-hero-wrap" style="width:100%;">
+      <div class="black-mansion-card" id="mansionCard" aria-label="LLB Real Estate — Click house or doorway to step inside">
+        
+        <!-- Dynamic Specular Glare Reflection -->
+        <div class="mansion-specular-glare" id="mansionGlare"></div>
+
+        <!-- Telemetry HUD Badge (Top-Left) -->
+        <div class="mansion-telemetry-hud">
+          <div class="telemetry-row">
+            <span class="telemetry-live-dot"></span>
+            <span class="telemetry-label">ESTATE:</span>
+            <span class="telemetry-val" id="hudEstateName">ECR BEACHFRONT RESIDENCE</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">SPECS:</span>
+            <span class="telemetry-val" id="hudEstateSpecs">14,800 SQ.FT &bull; 6 BEDS &bull; PRIVATE POOL</span>
+          </div>
+          <div class="telemetry-row">
+            <span class="telemetry-label">STATUS:</span>
+            <span class="telemetry-val" id="hudEstateStatus">EXCLUSIVE CLEAR TITLE &bull; TN RERA</span>
+          </div>
+        </div>
+
+        <!-- Top-Right Actions: Map Location Link & Legal Seal -->
+        <div class="mansion-top-actions">
+          <a href="#landingMapSection" class="mansion-gps-link" title="Explore Estates on Location Map">
+            <span>🗺️ Map Location &rarr;</span>
+          </a>
+          <div class="mansion-legal-seal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>RERA VERIFIED</span>
+          </div>
+        </div>
+
+        <!-- Main Architectural Estate Image -->
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=90" 
+             alt="LLB Real Estate Architectural Luxury Estate" 
+             class="black-mansion-img" 
+             id="mainMansionImg"
+             loading="eager">
+
+        <!-- Cinematic Ambient Vignette -->
+        <div class="black-mansion-vignette"></div>
+
+        <!-- Interactive Hotspot Beacons -->
+        <div class="mansion-hotspots-container">
+          
+          <!-- Grand Doorway Hotspot (Safe bottom spacing) -->
+          <div class="mansion-hotspot hotspot-door" id="hotspotDoor" onclick="triggerPortal(event)" role="button" aria-label="Step Inside Residence">
+            <div class="hotspot-pulse-ring">
+              <div class="hotspot-inner-diamond"></div>
+            </div>
+            <div class="hotspot-pill-label">
+              <span>🚪 Step Inside Residence &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Living Room Glazing Hotspot -->
+          <div class="mansion-hotspot hotspot-living" onclick="switchView(1)" role="button" aria-label="Double-Height Living Room">
+            <div class="hotspot-pulse-ring">
+              <div class="hotspot-inner-diamond"></div>
+            </div>
+            <div class="hotspot-pill-label">
+              <span>🛋️ Double-Height Foyer</span>
+            </div>
+          </div>
+
+          <!-- Private Coastal Grounds Hotspot -->
+          <div class="mansion-hotspot hotspot-balcony" onclick="switchView(2)" role="button" aria-label="Private Coastal Courtyard">
+            <div class="hotspot-pulse-ring">
+              <div class="hotspot-inner-diamond"></div>
+            </div>
+            <div class="hotspot-pill-label">
+              <span>🌊 Oceanfront Grounds</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Perspective Switcher Dock (Bottom-Inside) -->
+        <div class="mansion-view-dock" role="tablist" aria-label="Architectural Perspectives">
+          <button class="mansion-view-btn active" data-view="0" onclick="switchView(0)">
+            <span>01</span> Twilight Elevation
+          </button>
+          <button class="mansion-view-btn" data-view="1" onclick="switchView(1)">
+            <span>02</span> Grand Living Room
+          </button>
+          <button class="mansion-view-btn" data-view="2" onclick="switchView(2)">
+            <span>03</span> Oceanfront Pool
+          </button>
+          <button class="mansion-view-btn" data-view="3" onclick="switchView(3)">
+            <span>04</span> Aerial Grounds
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive Portfolio Stat Chips (Below Mansion) -->
+    <section class="landing-stats-row" aria-label="Portfolio Metrics" style="width:100%;">
+      <div class="stat-chip-card" onclick="window.location.href='#landingMapSection'" role="button">
+        <span class="stat-chip-val">&inr;850+ Cr</span>
+        <span class="stat-chip-lbl">Managed Prime Portfolio</span>
+      </div>
+      <div class="stat-chip-card" onclick="window.location.href='properties.html'" role="button">
+        <span class="stat-chip-val">14 Estates</span>
+        <span class="stat-chip-lbl">Curated Prime Chennai Properties</span>
+      </div>
+      <div class="stat-chip-card" onclick="window.location.href='about.html'" role="button">
+        <span class="stat-chip-val">100% CMDA</span>
+        <span class="stat-chip-lbl">TN RERA Legal Due Diligence</span>
+      </div>
+      <div class="stat-chip-card" onclick="openFreeCabModal('General Advisory')" role="button">
+        <span class="stat-chip-val">🚕 Free Cab</span>
+        <span class="stat-chip-lbl">Complimentary VIP Site Visit</span>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 1: INTERACTIVE REAL ESTATE MAP (RIGHT ON LANDING PAGE)
+         Guaranteed visible with Google Satellite embed & Dark Cartography
+         ========================================================================== -->
+    <section id="landingMapSection" class="landing-section-block">
+      <div class="landing-section-header">
+        <div>
+          <span class="badge-mini" style="background:#000000; color:#FFFFFF; border:1.5px solid #000000;">
+            REAL-TIME CARTOGRAPHIC GPS &bull; 14 LOCATIONS PINNED
+          </span>
+          <h2 class="landing-section-title">Chennai &amp; India Interactive Real Estate Map</h2>
+          <p class="landing-section-sub">
+            Tap any pinned location or territory to immediately launch animated street navigation and view verified properties.
+          </p>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <a href="map.html" class="btn btn-black btn-sm">Full Map Page Console &rarr;</a>
+          <button class="btn btn-outline btn-sm" onclick="connectLandingUserLiveGps()" id="btnLandingLiveGps">
+            📍 Detect Live GPS Location
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Map Console Card -->
+      <div class="map-console-card">
+        
+        <!-- Header Controls Integrated Seamlessly into Map Frame -->
+        <div class="map-console-header">
+          <div class="map-status-indicator">
+            <span class="map-beacon-dot"></span>
+            <span id="mapStatusText" style="color:#FFFFFF; font-weight:800; letter-spacing:0.8px;">3D CARTOGRAPHY: READY &bull; CLICK ANY PLOT TO RIDE ALONG CHENNAI ROADS</span>
+          </div>
+
+          <div class="map-view-presets">
+            <button class="map-preset-btn btn-gps-live" onclick="connectUserLiveGps()" id="btnLiveGps">
+              <span class="gps-pulse-beacon"></span>
+              <span>📍 Detect Live Location</span>
+            </button>
+            <button class="map-preset-btn map-layer-btn active" data-layer="dark" onclick="setMapStyleType('dark')">
+              🌙 Dark Night 3D
+            </button>
+            <button class="map-preset-btn map-layer-btn" data-layer="streets" onclick="setMapStyleType('streets')">
+              <svg style="width:13px; height:13px; vertical-align:-1px; margin-right:4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 19L8 5M20 19L16 5M12 7V9M12 13V15M12 19V21"/></svg>Day Streets 3D
+            </button>
+            <button class="map-preset-btn map-layer-btn" data-layer="satellite" onclick="setMapStyleType('satellite')">
+              🛰️ Satellite 3D
+            </button>
+            <button class="map-preset-btn" onclick="returnToChennaiOverview()">
+              📍 Focus Chennai
+            </button>
+            <button class="map-preset-btn" onclick="focusPresetIndia()">
+              🇮🇳 All India
+            </button>
+          </div>
+        </div>
+
+        <!-- 1. Interactive 3D WebGL Map Container with Windshield HUD & First-Person Controls -->
+        <div id="interactiveMapWrap" class="interactive-map-wrapper">
+          
+          <!-- WebGL 3D Map Viewport -->
+          <div id="realMapDisplay" style="width:100%; height:640px; min-height:540px; display:block; position:relative; background:#0B0F19; z-index:1;"></div>
+
+          <!-- STAGE B: Route Calculation Banner -->
+          <div id="stageBRouteNotice" class="stage-b-route-notice" style="display:none;">
+            <div class="route-notice-inner">
+              <div class="route-notice-spinner"></div>
+              <div class="route-notice-text">
+                <strong id="stageBPlotName">Calculating Real Road Route...</strong>
+                <span id="stageBRouteDetails">Connecting via Chennai Street Network</span>
+              </div>
+              <button class="btn-cancel-route" onclick="returnToChennaiOverview()">Cancel</button>
+            </div>
+          </div>
+
+          <!-- STAGE D: FIRST PERSON DRIVING COCKPIT & TURN-BY-TURN HUD (Active while driving inside the 3D map) -->
+          <div id="inMapDriverCockpit" class="driver-cockpit-hud" style="display:none;">
+            
+            <!-- Top Turn-By-Turn Navigation Guidance Bar -->
+            <div class="turn-by-turn-banner" id="turnByTurnBanner">
+              <div class="turn-maneuver-icon-box" id="hudManeuverIcon">
+                <svg viewBox="0 0 32 32" fill="currentColor" class="turn-svg-icon"><path d="M16 4 L8 12 H14 V24 H18 V12 H24 Z"/></svg>
+              </div>
+              <div class="turn-instruction-text">
+                <span class="turn-distance" id="hudTurnDistance">STARTING TRIP...</span>
+                <strong class="turn-street-name" id="hudTurnStreet">Entering Route Corridor</strong>
+              </div>
+              <div style="display:flex; gap:6px; align-items:center;">
+                <button class="cockpit-stop-quick-btn" onclick="toggleStopRoadJourney()" id="btnQuickStop">⏹️ Stop</button>
+                <button class="cockpit-skip-btn" onclick="skipToPlotArrival()">Arrive at Plot ⚡</button>
+              </div>
+            </div>
+
+            <!-- Driver's Bottom Dashboard & Instrument Cluster Overlay -->
+            <div class="driver-dashboard-panel">
+              
+              <!-- Left: Live Speedometer Dial & Digital Telemetry -->
+              <div class="cockpit-speedometer-cluster">
+                <div class="speed-digital-display">
+                  <span class="speed-number" id="hudCockpitSpeed">0</span>
+                  <span class="speed-unit">KM/H</span>
+                </div>
+                <div class="gear-status-badge">
+                  <span class="gear-mode" id="hudGearMode">D3</span>
+                  <span class="drive-status" id="hudDriveStatus">CRUISING</span>
+                </div>
+              </div>
+
+              <!-- Center: Navigation Road Information & Steer Guidance -->
+              <div class="cockpit-corridor-hub">
+                <div class="cockpit-road-label">
+                  <span class="gps-beacon-mini"></span>
+                  <span id="hudCurrentRoad">Marina Beach Promenade</span>
+                </div>
+                <div class="cockpit-target-label">
+                  <span>Destination: </span><strong id="hudTargetEstate">Selected Plot</strong>
+                </div>
+                <!-- Live Progress Bar along the Street Route -->
+                <div class="cockpit-route-progress-wrap">
+                  <div class="cockpit-route-progress-bar" id="hudRouteProgressBar"></div>
+                </div>
+              </div>
+
+              <!-- Right: Interactive Driving Controls (Stop, Overview, Turbo, Camera Angle) -->
+              <div class="cockpit-controls-cluster">
+                <div class="cockpit-dist-remaining">
+                  <span class="dist-tag">REMAINING</span>
+                  <span class="dist-val" id="hudRemainingDist">18.4 km</span>
+                </div>
+                <div class="cockpit-interactive-btns">
+                  <button class="cockpit-drive-btn btn-stop" id="btnStopDrive" onclick="toggleStopRoadJourney()" title="Pause / Resume Journey">⏹️ Stop</button>
+                  <button class="cockpit-drive-btn btn-overview" onclick="returnToChennaiOverview()" title="Return to City Overview">🗺️ Overview</button>
+                  <button class="cockpit-drive-btn btn-turbo" id="btnTurboDrive" onclick="toggleTurboSpeed()" title="Adjust traveling speed">🚀 1x Speed</button>
+                  <button class="cockpit-drive-btn btn-view-cam" id="btnToggleCamView" onclick="cycleCameraPerspective()" title="Toggle Camera Angle">🎥 Windshield</button>
+                </div>
+              </div>
+
+            </div><!-- /.driver-dashboard-panel -->
+
+            <!-- Steering Wheel Silhouette at Bottom Center for True In-Car Feel -->
+            <div class="cockpit-steering-wheel" id="cockpitSteeringWheel">
+              <svg viewBox="0 0 120 70" fill="none" class="steering-wheel-svg">
+                <path d="M15 65 C10 40 30 10 60 10 C90 10 110 40 105 65" stroke="rgba(255,255,255,0.45)" stroke-width="6" stroke-linecap="round"/>
+                <path d="M22 62 C26 44 40 22 60 22 C80 22 94 44 98 62" stroke="rgba(0,0,0,0.7)" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="60" cy="46" r="14" fill="#0B0F19" stroke="#C5A059" stroke-width="2"/>
+                <path d="M22 62 L48 48 M98 62 L72 48" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+                <circle cx="60" cy="46" r="4" fill="#C5A059"/>
+              </svg>
+            </div>
+
+          </div><!-- /#inMapDriverCockpit -->
+
+          <!-- Grand Destination Arrival Modal Banner (Shown upon reaching destination before redirect) -->
+          <div id="arrivalGrandBanner" class="arrival-grand-banner" style="display:none;">
+            <div class="arrival-banner-body">
+              <span class="arrival-badge-tag">🎯 YOU HAVE ARRIVED AT YOUR DESTINATION</span>
+              <h2 class="arrival-title" id="arrivalBannerTitle">Neelankarai Beachfront Estate</h2>
+              <p class="arrival-subtitle" id="arrivalBannerSub">🎯 DESTINATION REACHED &bull; Opening Properties Collection...</p>
+              <div class="arrival-loader-bar"></div>
+            </div>
+          </div>
+
+          <!-- STAGE F: Property Arrival Dossier Modal Card (Exact Plot Boundary & Legal Specs) -->
+          <div id="plotArrivalModal" class="plot-arrival-modal" style="display:none;">
+            <div class="plot-arrival-card">
+              <div class="plot-arrival-header">
+                <div class="plot-badge-pill">
+                  <span class="beacon-dot"></span>
+                  <span id="arrCategoryTag">RESIDENTIAL PLOT &bull; CRZ-II APPROVED</span>
+                </div>
+                <button class="plot-arrival-close" onclick="closePlotArrivalModal()">&times;</button>
+              </div>
+
+              <div class="plot-arrival-main">
+                <h2 class="plot-arrival-title" id="arrPlotTitle">Neelankarai Coastal Villa Plot</h2>
+                <p class="plot-arrival-loc" id="arrPlotLocation">📍 Neelankarai, East Coast Road (ECR), Chennai</p>
+
+                <div class="plot-specs-grid">
+                  <div class="plot-spec-item">
+                    <span class="spec-label">PLOT VALUATION</span>
+                    <span class="spec-value highlight-cyan" id="arrPlotPrice">₹5.50 Cr</span>
+                  </div>
+                  <div class="plot-spec-item">
+                    <span class="spec-label">LAND AREA</span>
+                    <span class="spec-value highlight-gold" id="arrPlotSize">2.0 Grounds (4,800 sq.ft)</span>
+                  </div>
+                  <div class="plot-spec-item">
+                    <span class="spec-label">DIMENSIONS</span>
+                    <span class="spec-value" id="arrPlotDimensions">60 ft frontage x 80 ft depth</span>
+                  </div>
+                  <div class="plot-spec-item">
+                    <span class="spec-label">FRONTING ROAD</span>
+                    <span class="spec-value" id="arrPlotRoad">40 Feet Blacktop Road</span>
+                  </div>
+                </div>
+
+                <div class="plot-legal-strip">
+                  <span class="legal-badge">✓ CMDA APPROVED</span>
+                  <span class="legal-badge">✓ TN RERA REGISTERED</span>
+                  <span class="legal-badge">✓ CLEAR PATTA TITLE</span>
+                </div>
+
+                <div class="plot-arrival-actions">
+                  <button class="btn btn-primary-gold" id="btnArrivalViewDetails" onclick="openPlotDetailsPage()">
+                    Inspect Full Photo Gallery &amp; Legal Dossier &rarr;
+                  </button>
+                  <button class="btn btn-outline-light" onclick="openFreeCabModalForCurrentPlot()">
+                    🚕 Book Free Chauffeur Cab to Site
+                  </button>
+                  <button class="btn btn-outline-light" onclick="returnToChennaiOverview()">
+                    🗺️ Return to Chennai Overview
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /#interactiveMapWrap -->
+
+        <!-- Location Chips Grid for Fast One-Tap Selection -->
+        <div class="map-locations-section">
+          <h4 class="map-locations-title">
+            <span>📍 CLICK ANY PLOT BELOW OR PIN ON THE 3D MAP TO START YOUR FIRST-PERSON ROAD RIDE:</span>
+          </h4>
+
+          <div class="map-locations-grid">
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-land-01')">
+              <div class="loc-info">
+                <span>🏖️</span>
+                <span class="loc-name">Neelankarai Coastal Villa Plot (ECR)</span>
+              </div>
+              <span class="chip-cnt">₹5.50 Cr &bull; Plot</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-land-02')">
+              <div class="loc-info">
+                <span>🏡</span>
+                <span class="loc-name">Anna Nagar West Extension Plot</span>
+              </div>
+              <span class="chip-cnt">₹6.80 Cr &bull; Plot</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-land-03')">
+              <div class="loc-info">
+                <span>🏰</span>
+                <span class="loc-name">Boat Club Road Corner Land</span>
+              </div>
+              <span class="chip-cnt">₹24.00 Cr &bull; Plot</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-land-04')">
+              <div class="loc-info">
+                <span>💼</span>
+                <span class="loc-name">OMR IT Highway Commercial Parcel</span>
+              </div>
+              <span class="chip-cnt">₹18.00 Cr &bull; Plot</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-land-05')">
+              <div class="loc-info">
+                <span>🌊</span>
+                <span class="loc-name">Uthandi Beachside Gated Acreage</span>
+              </div>
+              <span class="chip-cnt">₹9.20 Cr &bull; Plot</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-house-01')">
+              <div class="loc-info">
+                <span>🏖️</span>
+                <span class="loc-name">Akkarai Seafront Luxury Villa</span>
+              </div>
+              <span class="chip-cnt">₹14.85 Cr &bull; House</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-house-02')">
+              <div class="loc-info">
+                <span>🏰</span>
+                <span class="loc-name">Poes Garden Manor Estate</span>
+              </div>
+              <span class="chip-cnt">₹16.50 Cr &bull; House</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-house-03')">
+              <div class="loc-info">
+                <span>🏙️</span>
+                <span class="loc-name">Chetpet Harrington Sky Penthouse</span>
+              </div>
+              <span class="chip-cnt">₹7.50 Cr &bull; House</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-house-04')">
+              <div class="loc-info">
+                <span>🌊</span>
+                <span class="loc-name">Besant Nagar Courtyard Villa</span>
+              </div>
+              <span class="chip-cnt">₹11.20 Cr &bull; House</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-house-05')">
+              <div class="loc-info">
+                <span>🏢</span>
+                <span class="loc-name">Porur DLF Cybercity Smart Villa</span>
+              </div>
+              <span class="chip-cnt">₹4.85 Cr &bull; House</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-house-06')">
+              <div class="loc-info">
+                <span>🏠</span>
+                <span class="loc-name">Velachery Grand Duplex Villa</span>
+              </div>
+              <span class="chip-cnt">₹3.20 Cr &bull; House</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-house-07')">
+              <div class="loc-info">
+                <span>⚡</span>
+                <span class="loc-name">Bangalore Whitefield Prestige Villa</span>
+              </div>
+              <span class="chip-cnt">₹12.50 Cr &bull; House</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-house-08')">
+              <div class="loc-info">
+                <span>🌆</span>
+                <span class="loc-name">Mumbai Worli Seaface Penthouse</span>
+              </div>
+              <span class="chip-cnt">₹32.00 Cr &bull; House</span>
+            </button>
+
+            <button class="map-loc-card" onclick="selectPlotAndStartJourney('prop-land-06')">
+              <div class="loc-info">
+                <span>🌱</span>
+                <span class="loc-name">Coimbatore Race Course Parcel</span>
+              </div>
+              <span class="chip-cnt">₹8.50 Cr &bull; Plot</span>
+            </button>
+          </div>
+        </div>
+
+      </div><!-- /.map-console-card -->
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: FEATURED PROPERTIES SHOWCASE (WHITE & BLACK SHADES)
+         Matching properties.html Cards Exactly
+         ========================================================================== -->
+    <section class="landing-section-block" id="featuredSection">
+      <div class="landing-section-header">
+        <div>
+          <span class="badge-mini" style="background:rgba(255,255,255,0.12); color:#F5D77F; border:1px solid rgba(245,215,127,0.3);">
+            CURATED ARCHITECTURAL COLLECTION &bull; IN STOCK
+          </span>
+          <h2 class="landing-section-title">Featured Prime Residences &amp; Land Parcels</h2>
+          <p class="landing-section-sub">
+            Scrutinized with 35-year Encumbrance Certificates, CMDA/DTCP sanctions, and transparent INR valuations.
+          </p>
+        </div>
+        <a href="properties.html" class="btn btn-white btn-sm">View All 14 Properties &rarr;</a>
+      </div>
+
+      <div class="clean-properties-grid">
+        
+        <!-- Property 1 -->
+        <article class="clean-property-card" style="--card-index:0;">
+          <div class="clean-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" alt="Neelankarai Coastal Villa Plot" class="clean-card-img" loading="lazy">
+            <span class="clean-category-badge">PRIME RESIDENTIAL LAND</span>
+          </div>
+          <div class="clean-card-body">
+            <div class="clean-card-meta">
+              <span class="clean-zone-tag">ECR BEACHFRONT &bull; 4,800 SQ.FT</span>
+              <span class="clean-price">₹5.50 Cr</span>
+            </div>
+            <h3 class="clean-title">Neelankarai Coastal Villa Plot</h3>
+            <p class="clean-location">📍 Neelankarai, East Coast Road (ECR), Chennai</p>
+            <div class="clean-card-actions">
+              <a href="property-details.html?id=prop-land-01" class="clean-view-btn">View Details &amp; Gallery &rarr;</a>
+              <button class="clean-gps-btn" onclick="openPropertyGoogleMaps(12.9480, 80.2560, 'Neelankarai Coastal Villa Plot')" title="Check exact distance from your location on Google Maps">📍 Google Maps KM</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property 2 -->
+        <article class="clean-property-card" style="--card-index:1;">
+          <div class="clean-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80" alt="The Glass Pavilion Villa" class="clean-card-img" loading="lazy">
+            <span class="clean-category-badge">LUXURY RESIDENCE</span>
+          </div>
+          <div class="clean-card-body">
+            <div class="clean-card-meta">
+              <span class="clean-zone-tag">ECR BEACHFRONT &bull; 6 BEDS &bull; 14,800 SQ.FT</span>
+              <span class="clean-price">₹14.85 Cr</span>
+            </div>
+            <h3 class="clean-title">The Glass Pavilion Beachside Villa</h3>
+            <p class="clean-location">📍 Uthandi Golden Beach, ECR, Chennai</p>
+            <div class="clean-card-actions">
+              <a href="property-details.html?id=prop-house-01" class="clean-view-btn">View Details &amp; Gallery &rarr;</a>
+              <button class="clean-gps-btn" onclick="openPropertyGoogleMaps(12.8980, 80.2450, 'The Glass Pavilion Beachside Villa')" title="Check exact distance from your location on Google Maps">📍 Google Maps KM</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property 3 -->
+        <article class="clean-property-card" style="--card-index:2;">
+          <div class="clean-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80" alt="Boat Club Road Corner Land" class="clean-card-img" loading="lazy">
+            <span class="clean-category-badge">ULTRA-HNI ESTATE LAND</span>
+          </div>
+          <div class="clean-card-body">
+            <div class="clean-card-meta">
+              <span class="clean-zone-tag">BESPOKE SOUTH CHENNAI &bull; 9,600 SQ.FT</span>
+              <span class="clean-price">₹24.00 Cr</span>
+            </div>
+            <h3 class="clean-title">Boat Club Road Corner Land</h3>
+            <p class="clean-location">📍 Boat Club Road, R.A. Puram, Chennai</p>
+            <div class="clean-card-actions">
+              <a href="property-details.html?id=prop-land-03" class="clean-view-btn">View Details &amp; Gallery &rarr;</a>
+              <button class="clean-gps-btn" onclick="openPropertyGoogleMaps(13.0235, 80.2465, 'Boat Club Road Corner Land')" title="Check exact distance from your location on Google Maps">📍 Google Maps KM</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property 4 -->
+        <article class="clean-property-card" style="--card-index:3;">
+          <div class="clean-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="The Manor Colonial Estate" class="clean-card-img" loading="lazy">
+            <span class="clean-category-badge">BESPOKE RESIDENCE</span>
+          </div>
+          <div class="clean-card-body">
+            <div class="clean-card-meta">
+              <span class="clean-zone-tag">POES GARDEN &bull; 5 BEDS &bull; 11,200 SQ.FT</span>
+              <span class="clean-price">₹16.50 Cr</span>
+            </div>
+            <h3 class="clean-title">The Manor Colonial Heritage Residence</h3>
+            <p class="clean-location">📍 Kasturi Ranga Road, Poes Garden, Chennai</p>
+            <div class="clean-card-actions">
+              <a href="property-details.html?id=prop-house-02" class="clean-view-btn">View Details &amp; Gallery &rarr;</a>
+              <button class="clean-gps-btn" onclick="openPropertyGoogleMaps(13.0425, 80.2540, 'The Manor Colonial Heritage Residence')" title="Check exact distance from your location on Google Maps">📍 Google Maps KM</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property 5 -->
+        <article class="clean-property-card" style="--card-index:4;">
+          <div class="clean-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Anna Nagar West Extension Plot" class="clean-card-img" loading="lazy">
+            <span class="clean-category-badge">CENTRAL RESIDENTIAL PLOT</span>
+          </div>
+          <div class="clean-card-body">
+            <div class="clean-card-meta">
+              <span class="clean-zone-tag">CENTRAL CHENNAI &bull; 5,400 SQ.FT</span>
+              <span class="clean-price">₹6.80 Cr</span>
+            </div>
+            <h3 class="clean-title">Anna Nagar West Extension Plot</h3>
+            <p class="clean-location">📍 Anna Nagar West Ext., Chennai</p>
+            <div class="clean-card-actions">
+              <a href="property-details.html?id=prop-land-02" class="clean-view-btn">View Details &amp; Gallery &rarr;</a>
+              <button class="clean-gps-btn" onclick="openPropertyGoogleMaps(13.0880, 80.2070, 'Anna Nagar West Extension Plot')" title="Check exact distance from your location on Google Maps">📍 Google Maps KM</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property 6 -->
+        <article class="clean-property-card" style="--card-index:5;">
+          <div class="clean-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80" alt="Worli Seaface Penthouse" class="clean-card-img" loading="lazy">
+            <span class="clean-category-badge">INDIA PRIME PENTHOUSE</span>
+          </div>
+          <div class="clean-card-body">
+            <div class="clean-card-meta">
+              <span class="clean-zone-tag">MUMBAI SEAFRONT &bull; 8,500 SQ.FT</span>
+              <span class="clean-price">₹32.00 Cr</span>
+            </div>
+            <h3 class="clean-title">Worli Seaface Architectural Penthouse</h3>
+            <p class="clean-location">📍 Worli Sea Face, South Mumbai</p>
+            <div class="clean-card-actions">
+              <a href="property-details.html?id=prop-house-08" class="clean-view-btn">View Details &amp; Gallery &rarr;</a>
+              <button class="clean-gps-btn" onclick="openPropertyGoogleMaps(19.0178, 72.8178, 'Worli Seaface Architectural Penthouse')" title="Check exact distance from your location on Google Maps">📍 Google Maps KM</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center; margin-top:32px;">
+        <a href="properties.html" class="btn btn-white btn-lg">
+          Browse All 14 Properties in Full Collection &rarr;
+        </a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: 4 PILLARS OF REVENUE & LEGAL SCRUTINY (MATCHING ABOUT.HTML)
+         ========================================================================== -->
+    <section class="landing-section-block" id="pillarsSection">
+      <div class="landing-section-header">
+        <div>
+          <span class="badge-mini" style="background:rgba(255,255,255,0.12); color:#F5D77F; border:1px solid rgba(245,215,127,0.3);">
+            FIDUCIARY STANDARDS &bull; 100% CLEAR TITLE
+          </span>
+          <h2 class="landing-section-title">The 4 Pillars of Revenue &amp; Legal Scrutiny</h2>
+          <p class="landing-section-sub">
+            Every estate represented in our portfolio undergoes rigorous due diligence by Madras High Court Senior Advocates.
+          </p>
+        </div>
+        <a href="about.html" class="btn btn-outline btn-sm">About Our Due Diligence &rarr;</a>
+      </div>
+
+      <div class="about-pillars-grid">
+        <div class="about-pillar-card">
+          <h3><span>📜</span> TN RERA &amp; CMDA Sanctions</h3>
+          <p>
+            Every villa, commercial land parcel, and gated layout possesses authenticated sanctions from the Chennai Metropolitan Development Authority (CMDA), DTCP, and registration under TN RERA.
+          </p>
+        </div>
+
+        <div class="about-pillar-card">
+          <h3><span>🏛️</span> Computerized Patta &amp; Revenue Lineage</h3>
+          <p>
+            We conduct direct due diligence at Taluk Revenue offices. All land holdings feature verified computerized Patta passbooks, certified Village Chitta, and Town Survey (T.S.) sketches.
+          </p>
+        </div>
+
+        <div class="about-pillar-card">
+          <h3><span>⚖️</span> 35-Year Encumbrance Audit (EC)</h3>
+          <p>
+            Each asset undergoes continuous 35-year Encumbrance Certificate (EC) scrutiny guaranteeing zero prior mortgages, pending bank litigation, or revenue claims.
+          </p>
+        </div>
+
+        <div class="about-pillar-card">
+          <h3><span>💰</span> Transparent INR (₹) Valuations</h3>
+          <p>
+            We maintain absolute pricing transparency. Every listing details Fair Market Valuation and Government Guideline Tariff rates with zero hidden developer margins.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: PRIME TERRITORIES REPRESENTED (HORIZONTAL PILLS)
+         ========================================================================== -->
+    <section class="territories-strip" style="width:100%;">
+      <h3 class="territories-title">Prime Territories Represented</h3>
+      <div class="territories-pills">
+        <a href="properties.html?zone=ECR%20Beachfront" class="t-pill">🏖️ ECR Beachfront (Neelankarai, Akkarai, Uthandi)</a>
+        <a href="properties.html?zone=Bespoke%20South%20Chennai" class="t-pill">🏰 Boat Club Road &amp; Poes Garden</a>
+        <a href="properties.html?zone=Central%20Chennai" class="t-pill">🏡 Anna Nagar West &amp; Chetpet</a>
+        <a href="properties.html?zone=OMR%20IT%20Corridor" class="t-pill">💼 OMR IT Expressway (Sholinganallur)</a>
+        <a href="properties.html?zone=South%20Coastal%20Chennai" class="t-pill">🌊 Besant Nagar &amp; Adyar Coastal</a>
+        <a href="properties.html?zone=West%20Chennai%20Corridor" class="t-pill">🏙️ Porur DLF Cybercity</a>
+        <a href="properties.html?zone=South%20Central%20Hub" class="t-pill">🏠 Velachery Metropolitan Hub</a>
+        <a href="properties.html?zone=Bangalore%20Tech%20Hub" class="t-pill">⚡ Bangalore Tech Corridor (Whitefield)</a>
+        <a href="properties.html?zone=Mumbai%20Seafront" class="t-pill">🌆 Mumbai Seafront (Worli Promenade)</a>
+        <a href="properties.html?zone=Coimbatore%20Prime" class="t-pill">🌱 Coimbatore Central (Race Course)</a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: VIP COURTESY CHAUFFEUR CAB & REGISTRATION CTA
+         ========================================================================== -->
+    <section style="width:100%; background:#0E0E0E; color:#FFF; padding:36px; border:1px solid rgba(255,255,255,0.18); box-shadow:0 16px 40px rgba(0,0,0,0.85); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
+      <div>
+        <span class="badge-mini" style="background:#C5A059; color:#000; font-weight:800;">VIP CLIENT PRIVILEGE</span>
+        <h3 style="font-size:22px; font-weight:800; margin:8px 0 4px 0; color:#FFFFFF;">Request Complimentary Chauffeur Cab &amp; Dossier</h3>
+        <p style="font-size:13px; color:#CCCCCC; max-width:640px;">
+          Mercedes-Benz, BMW, or Innova HyCross VIP chauffeur pickup from your home, hotel, or airport directly to any property for private inspection.
+        </p>
+      </div>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <button class="btn btn-white btn-lg" onclick="openFreeCabModal('Landing Page VIP Banner')">
+          🚕 Book Complimentary Cab &rarr;
+        </button>
+        <button class="btn btn-outline btn-lg" onclick="openRegistrationModalDirect()">
+          📋 Private Dossier &rarr;
+        </button>
+      </div>
+    </section>
+
+    <!-- Ultra-Luxury Fiduciary Advisory Footer -->
+    <footer class="site-luxury-footer">
+      <div class="footer-inner-container">
+        <div class="footer-main-grid">
+          
+          <!-- Col 1: Brand Credentials -->
+          <div class="footer-brand-col">
+            <div class="footer-logo-wrap">
+              <svg class="footer-logo-svg" viewBox="0 0 100 85" width="40" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 8 L90 38 H10 L50 8 Z" stroke="url(#ftGoldGrad)" stroke-width="4.5" stroke-linejoin="round" fill="rgba(30, 58, 138, 0.3)" />
+                <path d="M22 38 V73 H40" stroke="url(#ftGoldGrad)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M44 44 V73 H57" stroke="#FFFFFF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M63 44 V73 H74 C80 73 83.5 69.5 83.5 65 C83.5 61 80.5 58.5 74 58.5 H63 M63 58.5 H73 C78.5 58.5 82 55.5 82 51.5 C82 47.5 78 44 72 44 H63" stroke="url(#ftGoldGrad)" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <line x1="20" y1="78" x2="90" y2="78" stroke="url(#ftGoldGrad)" stroke-width="1.8" stroke-linecap="round" />
+                <defs>
+                  <linearGradient id="ftGoldGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#F5D77F"/>
+                    <stop offset="50%" stop-color="#D4AF37"/>
+                    <stop offset="100%" stop-color="#AA7C11"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="footer-brand-text">
+                <span class="footer-brand-name">LLB REAL ESTATE</span>
+                <span class="footer-brand-tag">CHENNAI &bull; LUXURY HOMES &amp; LAND</span>
+              </div>
+            </div>
+            <p class="footer-brand-desc">
+              Chennai's premier private acquisitions advisory. Specializing in legally scrutinized beachfront estates, elite residential plots, and bespoke architectural homes with transparent INR valuations.
+            </p>
+            <div class="footer-rera-chip">
+              <span class="status-indicator"></span>
+              <span>TN RERA Certified &bull; 100% Clear Title Guarantee</span>
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation & Portals -->
+          <div class="footer-links-col">
+            <h4 class="footer-heading">PORTFOLIO PORTALS</h4>
+            <ul class="footer-nav-list">
+              <li><a href="index.html">🏡 Prime Residences Home</a></li>
+              <li><a href="about.html">🏛️ About Fiduciary Due Diligence</a></li>
+              <li><a href="map.html">🗺️ 3D Road Navigation Map</a></li>
+              <li><a href="properties.html">🏰 Verified Properties (14)</a></li>
+              <li><a href="javascript:void(0)" onclick="openRegistrationModalDirect()">📋 Client Registration</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Prime Territories -->
+          <div class="footer-links-col">
+            <h4 class="footer-heading">PRIME TERRITORIES</h4>
+            <ul class="footer-nav-list">
+              <li><a href="properties.html?cat=land">🌊 ECR Beachfront Estates</a></li>
+              <li><a href="properties.html?cat=house">🏛️ Boat Club Road &amp; Poes Garden</a></li>
+              <li><a href="properties.html?cat=land">🏢 OMR IT Expressway Corridor</a></li>
+              <li><a href="properties.html?cat=land">🌿 Anna Nagar West &amp; Central</a></li>
+              <li><a href="properties.html?cat=house">🏙️ Besant Nagar Coastal &amp; Adyar</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Private Concierge Desk -->
+          <div class="footer-links-col">
+            <h4 class="footer-heading">VIP CONCIERGE DESK</h4>
+            <div class="footer-concierge-card">
+              <p class="footer-concierge-item">
+                <strong>📍 Advisory Office:</strong><br>
+                Boat Club Road &amp; ECR Coastal Highway, Chennai, Tamil Nadu &ndash; 600028
+              </p>
+              <p class="footer-concierge-item">
+                <strong>📞 Direct Concierge:</strong><br>
+                <a href="tel:+919840012345" class="footer-phone-link">+91 98400 12345</a>
+              </p>
+              <div class="footer-cta-row">
+                <button class="footer-cab-btn" onclick="openFreeCabModal('Footer Chauffeur Booking')">
+                  🚕 Book Free Chauffeur Cab
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Copyright & Compliance Bar -->
+        <div class="footer-bottom-bar">
+          <p class="footer-copy-text">
+            &copy; 2026 LLB Real Estate Advisory. All Rights Reserved. Regulated under Tamil Nadu Real Estate Regulatory Authority (TN RERA).
+          </p>
+          <div class="footer-legal-links">
+            <a href="about.html">Legal Due Diligence</a>
+            <span class="footer-sep">&bull;</span>
+            <a href="javascript:void(0)" onclick="openRegistrationModalDirect()">Confidential Dossier</a>
+            <span class="footer-sep">&bull;</span>
+            <a href="map.html">Interactive Map</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Cinematic Portal Transition Curtain -->
+  <div id="portalCurtain" class="portal-transition-curtain">
+    <div class="portal-beam-spinner"></div>
+    <div class="portal-loading-text">ENTERING LOCATION MAP &amp; ESTATES...</div>
+  </div>
+
+  <!-- DIRECT REGISTRATION MODAL -->
+  <div id="directRegModal" class="modal" onclick="handleModalBackdropClick(event)">
+    <div class="modal-content modal-reg-box">
+      <button class="modal-close" onclick="closeRegistrationModal()">&times;</button>
+      
+      <div class="form-header-bar">
+        <div class="form-header-titles">
+          <h3>CLIENT REGISTRATION</h3>
+          <span class="form-header-sub">CHENNAI &bull; LAND &bull; HOUSING</span>
+        </div>
+        <span class="form-badge">&#10003; VERIFIED SUBMISSION</span>
+      </div>
+
+      <div class="modal-reg-body">
+        <p style="font-size:13px; color:#CCCCCC; margin-bottom:16px;">
+          Register with LLB Real Estate. An authenticated <strong>Confidential Property Dossier</strong> with survey numbers, Patta passbooks, and TN RERA documents will be automated to your email via SMTP.
+        </p>
+
+        <form id="directRegistrationForm" onsubmit="handleDirectRegSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="regFullName">Full Name <span class="req">*</span></label>
+              <input type="text" id="regFullName" name="fullName" placeholder="e.g. Nasiha Banu" required>
+            </div>
+            <div class="form-group">
+              <label for="regEmail">Email Address (Receives Official Dossier) <span class="req">*</span></label>
+              <input type="email" id="regEmail" name="email" placeholder="yourname@gmail.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="regPhone">WhatsApp / Phone (+91) <span class="req">*</span></label>
+              <input type="tel" id="regPhone" name="phone" placeholder="+91 98400 12345" required>
+            </div>
+            <div class="form-group">
+              <label for="regPropertyType">Category of Interest <span class="req">*</span></label>
+              <select id="regPropertyType" name="propertyType" required>
+                <option value="Both Land & Housing">Both Land &amp; Housing</option>
+                <option value="Luxury House / Villa">Luxury House / Villa</option>
+                <option value="Land / Residential Plot">Prime Land / Residential Plot</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="regLocation">Target Area <span class="req">*</span></label>
+              <select id="regLocation" name="location" required>
+                <option value="Any Prime Location">Any Prime Location</option>
+                <option value="ECR Beachfront (Neelankarai, Akkarai, Uthandi)">ECR Beachfront</option>
+                <option value="Boat Club & Poes Garden (Central Elite)">Boat Club &amp; Poes Garden</option>
+                <option value="Anna Nagar & Chetpet (Central Residential)">Anna Nagar &amp; Chetpet</option>
+                <option value="OMR IT Corridor (Sholinganallur)">OMR IT Corridor</option>
+                <option value="Besant Nagar & Adyar (South Coastal)">Besant Nagar &amp; Adyar</option>
+                <option value="Porur & Velachery (West / South Hubs)">Porur &amp; Velachery</option>
+                <option value="Bangalore & Mumbai (India Prime)">Bangalore &amp; Mumbai</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="regBudget">Budget (INR ₹) <span class="req">*</span></label>
+              <select id="regBudget" name="budget" required>
+                <option value="₹7 Cr – ₹15 Cr (Luxury Beachfront / Central Villa)">₹7 Cr – ₹15 Cr (Luxury Beachfront / Central Villa)</option>
+                <option value="₹15 Cr – ₹35 Cr+ (Ultra-Luxury Estate / HNI Land)">₹15 Cr – ₹35 Cr+ (Ultra-Luxury Estate / HNI Land)</option>
+                <option value="₹3 Cr – ₹7 Cr (Prime Residential / Land)">₹3 Cr – ₹7 Cr (Prime Residential / Land)</option>
+                <option value="Under ₹3 Cr (Independent Home / Compact Land)">Under ₹3 Cr (Independent Home / Compact Land)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="regSpecificProperty">Specific Property Selected</label>
+            <select id="regSpecificProperty" name="specificProperty">
+              <option value="General Portfolio Inquiry">-- General Portfolio Inquiry (All Matching Properties) --</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="regNotes">Specific Requirements / Survey Number Requests</label>
+            <textarea id="regNotes" name="notes" rows="2" placeholder="Mention Vaastu facing, site inspection date, or specific due-diligence questions..."></textarea>
+          </div>
+
+          <button type="submit" id="directRegSubmitBtn" class="btn btn-black btn-block">
+            <span class="btn-text">Submit Registration &amp; Dispatch Email Dossier</span>
+            <span class="btn-loader" style="display:none;"></span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- REGISTRATION SUCCESS CONFIRMATION MODAL -->
+  <div id="successModal" class="modal" onclick="handleModalBackdropClick(event)">
+    <div class="modal-content modal-success">
+      <button class="modal-close" onclick="closeSuccessModal()">&times;</button>
+      <div class="success-header">
+        <div class="success-icon">&check;</div>
+        <h3>Registration Successfully Completed</h3>
+        <p class="success-ref">Client Dossier Reference: <span id="successRefCode">LLB-CHN-12345</span></p>
+      </div>
+      <div class="success-body">
+        <p>
+          Thank you for registering with <strong>LLB Real Estate</strong>. Your luxury acquisition profile has been authenticated.
+        </p>
+        <div class="success-highlight-box">
+          <p><strong>Confirmation Email Dispatched via SMTP:</strong></p>
+          <p>An official registration dossier has been sent to: <strong id="successEmailDisplay">user@example.com</strong></p>
+        </div>
+      </div>
+      <div class="success-footer">
+        <button class="btn btn-black btn-block" onclick="closeSuccessModal()">Return to Portfolio</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPLIMENTARY LUXURY CAB FOR SITE INSPECTION MODAL -->
+  <div id="freeCabModal" class="modal" onclick="handleModalBackdropClick(event)">
+    <div class="modal-content modal-cab-box">
+      <button class="modal-close" onclick="closeFreeCabModal()">&times;</button>
+      
+      <div class="cab-header-bar">
+        <div class="form-header-titles">
+          <h3>COMPLIMENTARY LUXURY CAB SERVICE</h3>
+          <span class="form-header-sub">PRIVATE CHAUFFEUR &bull; SITE INSPECTIONS</span>
+        </div>
+        <span class="cab-badge">100% FREE COURTESY</span>
+      </div>
+
+      <div class="modal-reg-body">
+        <div class="cab-vip-banner">
+          <strong>VIP Chauffeur Courtesy:</strong> LLB Real Estate provides complimentary private luxury car pickup (Mercedes-Benz, BMW, or Toyota HyCross) from your home, hotel, or Chennai Airport (MAA) for site inspection of any curated land parcel or luxury residence.
+        </div>
+
+        <form id="freeCabForm" onsubmit="handleFreeCabSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cabFullName">Your Full Name <span class="req">*</span></label>
+              <input type="text" id="cabFullName" name="fullName" placeholder="e.g. Nasiha Banu" required>
+            </div>
+            <div class="form-group">
+              <label for="cabPhone">WhatsApp / Mobile (+91) <span class="req">*</span></label>
+              <input type="tel" id="cabPhone" name="phone" placeholder="+91 98400 12345" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cabEmail">Email Address (Receives Driver Contact &amp; Ref) <span class="req">*</span></label>
+              <input type="email" id="cabEmail" name="email" placeholder="yourname@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="cabPickupAddress">Pickup Location in Chennai <span class="req">*</span></label>
+              <input type="text" id="cabPickupAddress" name="pickupAddress" placeholder="e.g. Chennai Airport T2 / Hotel / Residence" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cabPropertyTarget">Destination Property / Area <span class="req">*</span></label>
+              <select id="cabPropertyTarget" name="propertyTarget" required>
+                <option value="ECR Beachfront Villa Plot (Neelankarai)">ECR Beachfront Villa Plot (Neelankarai)</option>
+                <option value="Boat Club & Poes Garden Elite Estates">Boat Club &amp; Poes Garden Elite Estates</option>
+                <option value="Anna Nagar West Extension Gated Plot">Anna Nagar West Extension Gated Plot</option>
+                <option value="Besant Nagar Oceanfront Residence">Besant Nagar Oceanfront Residence</option>
+                <option value="OMR IT Corridor Commercial Land">OMR IT Corridor Commercial Land</option>
+                <option value="Porur DLF Cybercity Villa">Porur DLF Cybercity Villa</option>
+                <option value="Velachery Duplex Residence">Velachery Duplex Residence</option>
+                <option value="All Prime Chennai Land & Housing Tour">All Prime Chennai Land &amp; Housing Tour</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cabVehicle">Chauffeur Vehicle Preference</label>
+              <select id="cabVehicle" name="vehicleClass">
+                <option value="Mercedes-Benz E-Class VIP">Mercedes-Benz E-Class Luxury Sedan</option>
+                <option value="BMW 5-Series Executive">BMW 5-Series Executive</option>
+                <option value="Toyota Innova HyCross VIP Captain Seats">Toyota Innova HyCross VIP (Captain Seats)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cabDate">Preferred Inspection Date <span class="req">*</span></label>
+              <input type="date" id="cabDate" name="inspectionDate" required>
+            </div>
+            <div class="form-group">
+              <label for="cabTime">Preferred Pickup Time <span class="req">*</span></label>
+              <select id="cabTime" name="inspectionTime" required>
+                <option value="09:30 AM (Morning Site Light)">09:30 AM (Morning Natural Sunlight)</option>
+                <option value="11:30 AM (Mid-Day Survey Inspection)">11:30 AM (Mid-Day Survey Inspection)</option>
+                <option value="03:30 PM (Afternoon Vaastu Review)">03:30 PM (Afternoon Vaastu Review)</option>
+                <option value="05:00 PM (Sunset / Twilight Sea Breeze)">05:00 PM (Sunset / Twilight Sea Breeze)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cabNotes">Special Passenger Requirements / Notes</label>
+            <input type="text" id="cabNotes" name="notes" placeholder="Number of family members accompanying, flight arrival number, or specific survey checks...">
+          </div>
+
+          <button type="submit" id="cabSubmitBtn" class="btn btn-black btn-block">
+            <span class="btn-text">🚕 Confirm Complimentary Cab &amp; Dispatch Driver &rarr;</span>
+            <span class="btn-loader" style="display:none;"></span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CAB SUCCESS CONFIRMATION MODAL -->
+  <div id="cabSuccessModal" class="modal" onclick="handleModalBackdropClick(event)">
+    <div class="modal-content modal-success">
+      <button class="modal-close" onclick="closeCabSuccessModal()">&times;</button>
+      <div class="success-header">
+        <div class="success-icon">&check;</div>
+        <h3>Free Luxury Cab Confirmed</h3>
+        <p class="success-ref">Cab Dispatch Reference: <span id="cabSuccessRef">LLB-CAB-87214</span></p>
+      </div>
+      <div class="success-body">
+        <p>
+          Your complimentary chauffeur-driven luxury vehicle has been scheduled for private property site inspection with <strong>LLB Real Estate</strong>.
+        </p>
+        <div class="success-highlight-box">
+          <p><strong>Pickup Location:</strong> <span id="cabSuccessPickup">Chennai Airport / Residence</span></p>
+          <p><strong>Destination:</strong> <span id="cabSuccessDest">Selected Prime Property</span></p>
+          <p style="margin-top:6px; color:#555; font-size:12px;">Our dedicated VIP chauffeur concierge will contact you 30 minutes prior to pickup.</p>
+        </div>
+      </div>
+      <div class="success-footer">
+        <button class="btn btn-black btn-block" onclick="closeCabSuccessModal()">Return to Website</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // =========================================================================
+    // 1. ARCHITECTURAL PERSPECTIVE VIEWS & TELEMETRY
+    // =========================================================================
+    const perspectiveViews = [
+      {
+        url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=90',
+        name: 'ECR BEACHFRONT RESIDENCE',
+        specs: '14,800 SQ.FT • 6 BEDS • PRIVATE POOL',
+        status: 'EXCLUSIVE CLEAR TITLE • TN RERA'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2400&q=90',
+        name: 'GRAND DOUBLE-HEIGHT LIVING FOYER',
+        specs: '24FT CEILING • ITALIAN MARBLE • MAP WALL',
+        status: 'INTERIOR PRIVATE ARCHITECTURE'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2400&q=90',
+        name: 'OCEANFRONT INFINITY COURTYARD',
+        specs: 'DIRECT PRIVATE BEACH ACCESS • SUN DECK',
+        status: 'COASTAL CRZ CLEARED • FREEHOLD'
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2400&q=90',
+        name: 'AERIAL PANORAMA & COMPOUND GROUNDS',
+        specs: '4 ACRE PRIVATE COMPOUND • HELIPAD ACCESS',
+        status: 'CHENNAI PRIME LUXURY ZONE'
+      }
+    ];
+
+    // Preload perspective images
+    perspectiveViews.forEach(v => {
+      const img = new Image();
+      img.src = v.url;
+    });
+
+    let activeViewIndex = 0;
+
+    function switchView(index) {
+      if (index === activeViewIndex) return;
+      activeViewIndex = index;
+
+      const data = perspectiveViews[index];
+      const mainImg = document.getElementById('mainMansionImg');
+      const hudName = document.getElementById('hudEstateName');
+      const hudSpecs = document.getElementById('hudEstateSpecs');
+      const hudStatus = document.getElementById('hudEstateStatus');
+
+      // Update button active state
+      const buttons = document.querySelectorAll('.mansion-view-btn');
+      buttons.forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+      });
+
+      // Cross-fade image
+      if (mainImg) {
+        mainImg.style.opacity = '0.35';
+        mainImg.style.transform = 'scale(1.04)';
+        setTimeout(() => {
+          mainImg.src = data.url;
+          mainImg.style.opacity = '1';
+          mainImg.style.transform = 'scale(1)';
+        }, 220);
+      }
+
+      // Update HUD telemetry
+      if (hudName) hudName.textContent = data.name;
+      if (hudSpecs) hudSpecs.textContent = data.specs;
+      if (hudStatus) hudStatus.textContent = data.status;
+    }
+
+    // =========================================================================
+    // 2. 3D INTERACTIVE PERSPECTIVE TILT & SPECULAR GLARE
+    // =========================================================================
+    const card = document.getElementById('mansionCard');
+    const glare = document.getElementById('mansionGlare');
+
+    if (card) {
+      let isHovering = false;
+
+      card.addEventListener('mouseenter', () => {
+        isHovering = true;
+      });
+
+      card.addEventListener('mousemove', (e) => {
+        if (!isHovering) return;
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+        // Subtle 3D tilt
+        const tiltX = -y * 8;
+        const tiltY = x * 8;
+        card.style.transform = `perspective(1200px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.012, 1.012, 1.012)`;
+
+        // Specular glare displacement
+        if (glare) {
+          const glareX = (x + 0.5) * 100;
+          const glareY = (y + 0.5) * 100;
+          glare.style.background = `radial-gradient(circle at ${glareX}% ${glareY}%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.03) 45%, transparent 70%)`;
+        }
+      });
+
+      card.addEventListener('mouseleave', () => {
+        isHovering = false;
+        card.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+      });
+
+      // Clicking card background triggers portal if not clicking on hotspots or dock buttons
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('.mansion-view-dock') || e.target.closest('.mansion-hotspot')) return;
+        triggerPortal(e);
+      });
+    }
+
+    // =========================================================================
+    // 3. CINEMATIC DOOR PORTAL TRANSITION TO MAP
+    // =========================================================================
+    function triggerPortal(e) {
+      if (e) e.preventDefault();
+      const curtain = document.getElementById('portalCurtain');
+      if (curtain) curtain.classList.add('active');
+
+      if (card) {
+        card.style.transform = 'perspective(1200px) scale3d(1.08, 1.08, 1.08)';
+        card.style.filter = 'brightness(1.25) contrast(1.15)';
+      }
+
+      setTimeout(() => {
+        window.location.href = 'map.html';
+      }, 350);
+    }
+
+    // =========================================================================
+    // 4. AMBIENT MOUSE SPOTLIGHT (CSS VARIABLES)
+    // =========================================================================
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      document.body.style.setProperty('--mouse-x', `${x}%`);
+      document.body.style.setProperty('--mouse-y', `${y}%`);
+    });
+
+    // =========================================================================
+    // 5. AMBIENT STARDUST PARTICLES CANVAS
+    // =========================================================================
+    (function initStarsCanvas() {
+      const canvas = document.getElementById('ambientStarsCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let width, height;
+      const particles = [];
+      const particleCount = 45;
+
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: Math.random() * 1.4 + 0.4,
+          speedY: Math.random() * 0.35 + 0.1,
+          speedX: (Math.random() - 0.5) * 0.25,
+          opacity: Math.random() * 0.55 + 0.15,
+          fadeSpeed: Math.random() * 0.008 + 0.003
+        });
+      }
+
+      function render() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let p of particles) {
+          p.y -= p.speedY;
+          p.x += p.speedX;
+          p.opacity += p.fadeSpeed;
+
+          if (p.opacity > 0.75 || p.opacity < 0.15) {
+            p.fadeSpeed = -p.fadeSpeed;
+          }
+
+          if (p.y < 0) {
+            p.y = height + 10;
+            p.x = Math.random() * width;
+          }
+          if (p.x < 0) p.x = width;
+          if (p.x > width) p.x = 0;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255, 255, 255, ${Math.max(0, p.opacity)})`;
+          ctx.shadowBlur = p.radius > 1 ? 6 : 0;
+          ctx.shadowColor = '#FFFFFF';
+          ctx.fill();
+        }
+
+        requestAnimationFrame(render);
+      }
+      render();
+    })();
+
+    function toggleBlackMobileNav() {
+      const nav = document.getElementById('blackNavLinks');
+      const btn = document.getElementById('blackNavToggle');
+      if (!nav || !btn) return;
+      const willOpen = !nav.classList.contains('active');
+      nav.classList.toggle('active', willOpen);
+      nav.classList.toggle('mobile-open', willOpen);
+      btn.classList.toggle('open', willOpen);
+      btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    }
+
+    // Auto close mobile nav drawer upon clicking links
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.black-nav-links a');
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          const nav = document.getElementById('blackNavLinks');
+          const btn = document.getElementById('blackNavToggle');
+          if (nav && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            if (btn) btn.classList.remove('open');
+          }
+        });
+      });
+    });
+
+    // 3D Map Engine Loaded via map-engine.js
+  </script>
+  <script src="map-engine.js"></script>
+
+  <!-- Floating VIP WhatsApp Concierge (Luxury Real Estate Best Practice) -->
+  <a href="https://wa.me/919840012345?text=Hello%20LLB%20Realty%2C%20I%20am%20interested%20in%20inspecting%20luxury%20plots%20in%20Chennai." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-concierge" aria-label="Chat with VIP Concierge on WhatsApp">
+    <div class="whatsapp-badge-pulse"></div>
+    <svg class="whatsapp-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.5 3.5C18.2 1.2 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.5 4.2 1.6 6L.1 24l6.2-1.6c1.8 1 3.7 1.6 5.7 1.6 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5z" fill="#25D366"/>
+      <path d="M17.5 14.3c-.3-.1-1.7-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2.1c-.2-.5-.5-.5-.6-.5h-.5c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.3 4.8.7.3 1.3.5 1.8.7.8.2 1.5.2 2.1.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z" fill="#FFFFFF"/>
+    </svg>
+    <div class="whatsapp-tooltip-text">
+      <strong>VIP Concierge</strong>
+      <span>Instant WhatsApp Inquiry</span>
+    </div>
+  </a>
+</body>
+</html>

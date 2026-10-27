@@ -1,0 +1,1164 @@
+[
+  {
+    "id": "prop-land-01",
+    "title": "Neelankarai Coastal Villa Plot",
+    "category": "land",
+    "categoryLabel": "Residential Land Parcel",
+    "areaZone": "ECR Beachfront",
+    "location": "Neelankarai, East Coast Road (ECR), Chennai",
+    "coords": [
+      80.256,
+      12.948
+    ],
+    "latLng": [
+      12.948,
+      80.256
+    ],
+    "priceFormatted": "₹5.50 Cr",
+    "priceInr": "₹5,50,00,000",
+    "size": "2.0 Grounds (4,800 sq.ft)",
+    "dimensions": "60 ft frontage x 80 ft depth",
+    "roadWidth": "40 Feet Private Blacktop Road",
+    "facing": "East Facing (Vaastu Compliant)",
+    "reraNumber": "TN/01/Layout/0288/2023",
+    "cmdaApproval": "CMDA PPD/LO No. 44/2023",
+    "surveyNumber": "Survey No. 142/2A & 142/2B",
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "180 meters walking distance from private beach access",
+      "Gated community with 24/7 security & boundary wall",
+      "Sweet potable groundwater at 25 feet depth"
+    ],
+    "boundary": [
+      [
+        80.255916,
+        12.94811
+      ],
+      [
+        80.256084,
+        12.94811
+      ],
+      [
+        80.256084,
+        12.94789
+      ],
+      [
+        80.255916,
+        12.94789
+      ],
+      [
+        80.255916,
+        12.94811
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.255916,
+          12.94811
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.256084,
+          12.94811
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.256084,
+          12.94789
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.255916,
+          12.94789
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-land-02",
+    "title": "Prime Gated Plot in Anna Nagar West Extension",
+    "category": "land",
+    "categoryLabel": "Central City Land",
+    "areaZone": "Central Chennai",
+    "location": "Anna Nagar West Extension, Chennai - 600101",
+    "coords": [
+      80.207,
+      13.088
+    ],
+    "latLng": [
+      13.088,
+      80.207
+    ],
+    "priceFormatted": "₹6.80 Cr",
+    "priceInr": "₹6,80,00,000",
+    "size": "1.5 Grounds (3,600 sq.ft)",
+    "dimensions": "45 ft frontage x 80 ft depth",
+    "roadWidth": "50 Feet Avenue Road",
+    "facing": "North Facing",
+    "reraNumber": "TN/29/Layout/0114/2022",
+    "cmdaApproval": "CMDA Planning Permit No. 112/2022",
+    "surveyNumber": "Town Survey (T.S.) No. 48/3, Block 12",
+    "image": "https://images.unsplash.com/photo-1524813686514-a57563d77d66?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "5 minutes to Anna Nagar Tower Park & Thirumangalam Metro",
+      "High FSI allowance: 2.0 (Permissible built-up up to 7,200 sq.ft)",
+      "Metro water, sewage & high-tension 3-phase electricity connected"
+    ],
+    "boundary": [
+      [
+        80.206937,
+        13.08811
+      ],
+      [
+        80.207063,
+        13.08811
+      ],
+      [
+        80.207063,
+        13.08789
+      ],
+      [
+        80.206937,
+        13.08789
+      ],
+      [
+        80.206937,
+        13.08811
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.206937,
+          13.08811
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.207063,
+          13.08811
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.207063,
+          13.08789
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.206937,
+          13.08789
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-land-03",
+    "title": "HNI Corner Land, Boat Club Road Enclave",
+    "category": "land",
+    "categoryLabel": "Ultra-Luxury HNI Land",
+    "areaZone": "Bespoke South Chennai",
+    "location": "Boat Club Road / RA Puram, Chennai - 600028",
+    "coords": [
+      80.2465,
+      13.0235
+    ],
+    "latLng": [
+      13.0235,
+      80.2465
+    ],
+    "priceFormatted": "₹24.00 Cr",
+    "priceInr": "₹24,00,00,000",
+    "size": "3.0 Grounds (7,200 sq.ft)",
+    "dimensions": "80 ft frontage x 90 ft depth (Corner Plot)",
+    "roadWidth": "60 Feet VIP Tree-Lined Boulevard",
+    "facing": "North-East Corner Facing",
+    "reraNumber": "TN/29/Layout/0049/2023",
+    "cmdaApproval": "CMDA Special Regularisation No. 891/2023",
+    "surveyNumber": "T.S. No. 102/1 & 102/2, Block 18",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Chennai's most prestigious and confidential address",
+      "Neighbored by top industrialist consulates & corporate captains",
+      "Double road frontage providing panoramic architectural design freedom"
+    ],
+    "boundary": [
+      [
+        80.246388,
+        13.023624
+      ],
+      [
+        80.246612,
+        13.023624
+      ],
+      [
+        80.246612,
+        13.023376
+      ],
+      [
+        80.246388,
+        13.023376
+      ],
+      [
+        80.246388,
+        13.023624
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.246388,
+          13.023624
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.246612,
+          13.023624
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.246612,
+          13.023376
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.246388,
+          13.023376
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-land-04",
+    "title": "OMR IT Highway Commercial & Residential Parcel",
+    "category": "land",
+    "categoryLabel": "IT Corridor Land",
+    "areaZone": "OMR IT Corridor",
+    "location": "Sholinganallur Junction, OMR, Chennai - 600119",
+    "coords": [
+      80.228,
+      12.901
+    ],
+    "latLng": [
+      12.901,
+      80.228
+    ],
+    "priceFormatted": "₹11.25 Cr",
+    "priceInr": "₹11,25,00,000",
+    "size": "4.2 Grounds (10,080 sq.ft)",
+    "dimensions": "90 ft road frontage x 112 ft depth",
+    "roadWidth": "100 Feet OMR Service Road Access",
+    "facing": "East Facing Main Road",
+    "reraNumber": "TN/01/Layout/0391/2023",
+    "cmdaApproval": "CMDA Multi-Storey Permit No. 518/2023",
+    "surveyNumber": "Survey No. 209/1B & 209/2",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Direct frontage on Chennai's prime tech highway",
+      "Surrounded by ELCOT SEZ, TCS, Infosys, and international schools",
+      "Approved for G+5 luxury serviced apartments or corporate mansion"
+    ],
+    "boundary": [
+      [
+        80.227874,
+        12.901154
+      ],
+      [
+        80.228126,
+        12.901154
+      ],
+      [
+        80.228126,
+        12.900846
+      ],
+      [
+        80.227874,
+        12.900846
+      ],
+      [
+        80.227874,
+        12.901154
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.227874,
+          12.901154
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.228126,
+          12.901154
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.228126,
+          12.900846
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.227874,
+          12.900846
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-land-05",
+    "title": "Uthandi Beachside Gated Acreage",
+    "category": "land",
+    "categoryLabel": "Beachfront Land Parcel",
+    "areaZone": "ECR Beachfront",
+    "location": "Uthandi, Tollgate Bypass, ECR, Chennai - 600119",
+    "coords": [
+      80.243,
+      12.868
+    ],
+    "latLng": [
+      12.868,
+      80.243
+    ],
+    "priceFormatted": "₹5.85 Cr",
+    "priceInr": "₹5,85,00,000",
+    "size": "2.5 Grounds (6,000 sq.ft)",
+    "dimensions": "75 ft frontage x 80 ft depth",
+    "roadWidth": "30 Feet Coastal Private Access Lane",
+    "facing": "South-East Facing",
+    "reraNumber": "TN/01/Layout/0190/2024",
+    "cmdaApproval": "DTCP & CMDA Joint No. 67/2024",
+    "surveyNumber": "Survey No. 88/4 & 88/5",
+    "image": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Direct private access gate to pristine sand beach",
+      "Mature coconut grove on plot boundary providing natural canopy",
+      "100% security patrolled gated residential enclave"
+    ],
+    "boundary": [
+      [
+        80.242895,
+        12.86811
+      ],
+      [
+        80.243105,
+        12.86811
+      ],
+      [
+        80.243105,
+        12.86789
+      ],
+      [
+        80.242895,
+        12.86789
+      ],
+      [
+        80.242895,
+        12.86811
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.242895,
+          12.86811
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.243105,
+          12.86811
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.243105,
+          12.86789
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.242895,
+          12.86789
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-house-01",
+    "title": "The Glass Pavilion Contemporary Seafront Villa",
+    "category": "house",
+    "categoryLabel": "Luxury Designer Villa",
+    "areaZone": "ECR Beachfront",
+    "location": "Akkarai Beachfront, ECR, Chennai - 600119",
+    "coords": [
+      80.245,
+      12.898
+    ],
+    "latLng": [
+      12.898,
+      80.245
+    ],
+    "priceFormatted": "₹14.50 Cr",
+    "priceInr": "₹14,50,00,000",
+    "size": "6,200 sq.ft Built-up | 2.2 Grounds Land",
+    "dimensions": "5 Bedrooms | 6 Bathrooms | Private Infinity Pool",
+    "roadWidth": "40 Feet Private Gated Boulevard",
+    "facing": "East Facing (Unobstructed Bay of Bengal Views)",
+    "reraNumber": "TN/01/Building/0342/2023",
+    "cmdaApproval": "CMDA PP No. B/Spl.Bldg/214/2023",
+    "surveyNumber": "Survey No. 119/3B, Akkarai Village",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Full height double-glazed acoustic floor-to-ceiling glass walls",
+      "Private saltwater swimming pool with imported Italian teak sun deck",
+      "German Poggenpohl modular kitchen & Miele built-in appliances"
+    ],
+    "boundary": [
+      [
+        80.244889,
+        12.898145
+      ],
+      [
+        80.245111,
+        12.898145
+      ],
+      [
+        80.245111,
+        12.897855
+      ],
+      [
+        80.244889,
+        12.897855
+      ],
+      [
+        80.244889,
+        12.898145
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.244889,
+          12.898145
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.245111,
+          12.898145
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.245111,
+          12.897855
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.244889,
+          12.897855
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-house-02",
+    "title": "The Manor Colonial Contemporary Estate",
+    "category": "house",
+    "categoryLabel": "Heritage Modern Bungalow",
+    "areaZone": "Bespoke South Chennai",
+    "location": "Poes Garden, Chennai - 600086",
+    "coords": [
+      80.254,
+      13.0425
+    ],
+    "latLng": [
+      13.0425,
+      80.254
+    ],
+    "priceFormatted": "₹32.00 Cr",
+    "priceInr": "₹32,00,00,000",
+    "size": "7,800 sq.ft Built-up | 3.5 Grounds Land",
+    "dimensions": "6 Bedrooms | 7 Bathrooms | 6-Car Covered Garage",
+    "roadWidth": "50 Feet High-Security VIP Lane",
+    "facing": "North-East Facing",
+    "reraNumber": "TN/29/Building/0118/2024",
+    "cmdaApproval": "CMDA Spl. Commission No. 341/2024",
+    "surveyNumber": "T.S. No. 71/4, Block 22, Mylapore",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Private courtyard with century-old Bodhi tree & cascading water walls",
+      "Handcrafted Burma teakwood paneling & Italian Statuario marble floors",
+      "Dedicated domestic staff quarters for 4 members with private entrance"
+    ],
+    "boundary": [
+      [
+        80.253889,
+        13.042645
+      ],
+      [
+        80.254111,
+        13.042645
+      ],
+      [
+        80.254111,
+        13.042355
+      ],
+      [
+        80.253889,
+        13.042355
+      ],
+      [
+        80.253889,
+        13.042645
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.253889,
+          13.042645
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.254111,
+          13.042645
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.254111,
+          13.042355
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.253889,
+          13.042355
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-house-03",
+    "title": "The Sky Penthouse at Harrington Residences",
+    "category": "house",
+    "categoryLabel": "Duplex Sky Mansion",
+    "areaZone": "Central Chennai",
+    "location": "Harrington Road, Chetpet / Nungambakkam, Chennai - 600031",
+    "coords": [
+      80.239,
+      13.072
+    ],
+    "latLng": [
+      13.072,
+      80.239
+    ],
+    "priceFormatted": "₹8.75 Cr",
+    "priceInr": "₹8,75,00,000",
+    "size": "4,500 sq.ft Duplex | 14th & 15th Floors",
+    "dimensions": "4 Bedrooms | 5 Bathrooms | 1,200 sq.ft Private Sky Terrace",
+    "roadWidth": "60 Feet Harrington Boulevard",
+    "facing": "East & North Panoramic City Views",
+    "reraNumber": "TN/29/Building/0488/2023",
+    "cmdaApproval": "CMDA High Rise Approval No. 782/2023",
+    "surveyNumber": "T.S. No. 19/2, Chetpet Town",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Direct private high-speed elevator opening into your private foyer",
+      "Jacuzzi on private open-air sky terrace overlooking the Chennai skyline",
+      "3 designated basement car parking slots with EV charging stations"
+    ],
+    "boundary": [
+      [
+        80.238889,
+        13.072145
+      ],
+      [
+        80.239111,
+        13.072145
+      ],
+      [
+        80.239111,
+        13.071855
+      ],
+      [
+        80.238889,
+        13.071855
+      ],
+      [
+        80.238889,
+        13.072145
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.238889,
+          13.072145
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.239111,
+          13.072145
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.239111,
+          13.071855
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.238889,
+          13.071855
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-house-04",
+    "title": "Architectural Courtyard Villa, Besant Nagar",
+    "category": "house",
+    "categoryLabel": "Coastal Urban Residence",
+    "areaZone": "South Coastal Chennai",
+    "location": "Kalakshetra Colony, Besant Nagar, Chennai - 600090",
+    "coords": [
+      80.267,
+      12.998
+    ],
+    "latLng": [
+      12.998,
+      80.267
+    ],
+    "priceFormatted": "₹11.20 Cr",
+    "priceInr": "₹11,20,00,000",
+    "size": "4,900 sq.ft Built-up | 1.8 Grounds Land",
+    "dimensions": "4 Bedrooms | 5 Bathrooms | Rooftop Zen Garden",
+    "roadWidth": "35 Feet Avenue Road",
+    "facing": "East Facing",
+    "reraNumber": "TN/29/Building/0255/2023",
+    "cmdaApproval": "CMDA Planning Permit No. 419/2023",
+    "surveyNumber": "Survey No. 34/2, Urur Village",
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Walking distance to Elliot's Beach and Kalakshetra cultural grounds",
+      "Designed with passive cooling architectural vents & skylights",
+      "Dedicated home theater room calibrated with Dolby Atmos acoustic baffles"
+    ],
+    "boundary": [
+      [
+        80.266889,
+        12.998145
+      ],
+      [
+        80.267111,
+        12.998145
+      ],
+      [
+        80.267111,
+        12.997855
+      ],
+      [
+        80.266889,
+        12.997855
+      ],
+      [
+        80.266889,
+        12.998145
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.266889,
+          12.998145
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.267111,
+          12.998145
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.267111,
+          12.997855
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.266889,
+          12.997855
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-house-05",
+    "title": "The DLF Cybercity Smart Villa, Porur",
+    "category": "house",
+    "categoryLabel": "Gated Community Villa",
+    "areaZone": "West Chennai Corridor",
+    "location": "Porur (Adjacent to DLF IT Park), Chennai - 600116",
+    "coords": [
+      80.156,
+      13.038
+    ],
+    "latLng": [
+      13.038,
+      80.156
+    ],
+    "priceFormatted": "₹3.65 Cr",
+    "priceInr": "₹3,65,00,000",
+    "size": "3,200 sq.ft Built-up | 1.2 Grounds Land",
+    "dimensions": "4 Bedrooms | 4 Bathrooms | 2-Car Port",
+    "roadWidth": "40 Feet Gated Community Internal Avenue",
+    "facing": "North Facing",
+    "reraNumber": "TN/02/Building/0199/2024",
+    "cmdaApproval": "CMDA Gated Enclave Permit No. 871/2024",
+    "surveyNumber": "Survey No. 312/1A, Porur Village",
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Integrated smart home automation for lighting, climate & security",
+      "5 minutes to DLF Cybercity & Sri Ramachandra Medical Center",
+      "Clubhouse with Olympic-length swimming pool, gym & tennis court"
+    ],
+    "boundary": [
+      [
+        80.155889,
+        13.038145
+      ],
+      [
+        80.156111,
+        13.038145
+      ],
+      [
+        80.156111,
+        13.037855
+      ],
+      [
+        80.155889,
+        13.037855
+      ],
+      [
+        80.155889,
+        13.038145
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.155889,
+          13.038145
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.156111,
+          13.038145
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.156111,
+          13.037855
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.155889,
+          13.037855
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-house-06",
+    "title": "Velachery Grand Duplex Villa",
+    "category": "house",
+    "categoryLabel": "Independent Urban Villa",
+    "areaZone": "South Central Hub",
+    "location": "Velachery Bypass, Chennai - 600042",
+    "coords": [
+      80.218,
+      12.979
+    ],
+    "latLng": [
+      12.979,
+      80.218
+    ],
+    "priceFormatted": "₹3.20 Cr",
+    "priceInr": "₹3,20,00,000",
+    "size": "3,400 sq.ft Built-up | 1.1 Grounds Land",
+    "dimensions": "4 Bedrooms | 4 Bathrooms | Terrace Garden",
+    "roadWidth": "30 Feet Corporation Tar Road",
+    "facing": "East Facing",
+    "reraNumber": "TN/29/Building/0388/2023",
+    "cmdaApproval": "CMDA Planning Approval No. 612/2023",
+    "surveyNumber": "T.S. No. 89/1B, Velachery Town",
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "3 minutes to Phoenix MarketCity Mall & Velachery MRTS Station",
+      "Independent freehold structure with private terrace garden & elevator",
+      "Borewell with iron filtration plant plus CMWSSB metro water"
+    ],
+    "boundary": [
+      [
+        80.217889,
+        12.979145
+      ],
+      [
+        80.218111,
+        12.979145
+      ],
+      [
+        80.218111,
+        12.978855
+      ],
+      [
+        80.217889,
+        12.978855
+      ],
+      [
+        80.217889,
+        12.979145
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          80.217889,
+          12.979145
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          80.218111,
+          12.979145
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          80.218111,
+          12.978855
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          80.217889,
+          12.978855
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-house-07",
+    "title": "The Whitefield Horizon Smart Villa",
+    "category": "house",
+    "categoryLabel": "Ultra-Luxury Smart Villa",
+    "areaZone": "Bangalore Tech Hub",
+    "location": "Whitefield Prestige Enclave, Bangalore, Karnataka - 560066",
+    "coords": [
+      77.7499,
+      12.9698
+    ],
+    "latLng": [
+      12.9698,
+      77.7499
+    ],
+    "priceFormatted": "₹12.50 Cr",
+    "priceInr": "₹12,50,00,000",
+    "size": "6,000 sq.ft Built-up | 6,500 sq.ft Land",
+    "dimensions": "5 Ensuite Bedrooms | Private Heated Pool | Smart Automation",
+    "roadWidth": "50 Feet Avenue Boulevard",
+    "facing": "East Facing",
+    "reraNumber": "PRM/KA/RERA/1251/446/PR/210323/004018",
+    "cmdaApproval": "BBMP / BDA Sanctioned Layout",
+    "surveyNumber": "Sy No. 72/1, Pattandur Agrahara",
+    "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Heated infinity swimming pool with Italian marble deck",
+      "Full Lutron Home Automation and Tesla Powerwall integration",
+      "Close to ITPL, international schools and metro terminus"
+    ],
+    "boundary": [
+      [
+        77.749789,
+        12.969945
+      ],
+      [
+        77.750011,
+        12.969945
+      ],
+      [
+        77.750011,
+        12.969655
+      ],
+      [
+        77.749789,
+        12.969655
+      ],
+      [
+        77.749789,
+        12.969945
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          77.749789,
+          12.969945
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          77.750011,
+          12.969945
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          77.750011,
+          12.969655
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          77.749789,
+          12.969655
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-house-08",
+    "title": "Worli Seaface Crown Panoramic Residence",
+    "category": "house",
+    "categoryLabel": "Iconic Seafront Penthouse",
+    "areaZone": "Mumbai Seafront",
+    "location": "Worli Seaface Promenade, Mumbai, Maharashtra - 400030",
+    "coords": [
+      72.8178,
+      19.0178
+    ],
+    "latLng": [
+      19.0178,
+      72.8178
+    ],
+    "priceFormatted": "₹32.00 Cr",
+    "priceInr": "₹32,00,000,000",
+    "size": "5,000 sq.ft Built-up | Arabian Sea Facing",
+    "dimensions": "4 Presidential Suites | 360-Degree Wraparound Terrace",
+    "roadWidth": "Worli Seaface 8-Lane Coastal Promenade",
+    "facing": "West Facing (Direct Arabian Sea Sunset)",
+    "reraNumber": "P51900001289 (MahaRERA Registered)",
+    "cmdaApproval": "MCGM Building Sanction Approved",
+    "surveyNumber": "Cadastral Survey No. 492, Lower Parel Division",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Unobstructed panoramic Arabian Sea and Bandra-Worli Sea Link views",
+      "Private keyed elevators opening directly into foyer",
+      "4 reserved covered basement parking bays"
+    ],
+    "boundary": [
+      [
+        72.817686,
+        19.017945
+      ],
+      [
+        72.817914,
+        19.017945
+      ],
+      [
+        72.817914,
+        19.017655
+      ],
+      [
+        72.817686,
+        19.017655
+      ],
+      [
+        72.817686,
+        19.017945
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          72.817686,
+          19.017945
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          72.817914,
+          19.017945
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          72.817914,
+          19.017655
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          72.817686,
+          19.017655
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prop-land-06",
+    "title": "Race Course Avenue Prime Land Parcel",
+    "category": "land",
+    "categoryLabel": "High-Value Commercial/Residential Land",
+    "areaZone": "Coimbatore Prime",
+    "location": "Race Course Road, Coimbatore, Tamil Nadu - 641018",
+    "coords": [
+      76.974,
+      11.008
+    ],
+    "latLng": [
+      11.008,
+      76.974
+    ],
+    "priceFormatted": "₹8.50 Cr",
+    "priceInr": "₹8,50,00,000",
+    "size": "2.5 Grounds (6,000 sq.ft)",
+    "dimensions": "70 ft frontage x 85 ft depth",
+    "roadWidth": "60 Feet Race Course Promenade",
+    "facing": "North-East Facing",
+    "reraNumber": "TN/11/Layout/0092/2023",
+    "cmdaApproval": "DTCP Approval No. 88/2023",
+    "surveyNumber": "T.S. No. 112/4, Race Course Block",
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+    "highlights": [
+      "Fronting the elite green walking loop of Coimbatore Race Course",
+      "High ground water table with copious fresh spring water",
+      "Immediate DTCP / LPA construction clearance"
+    ],
+    "boundary": [
+      [
+        76.973902,
+        11.008117
+      ],
+      [
+        76.974098,
+        11.008117
+      ],
+      [
+        76.974098,
+        11.007883
+      ],
+      [
+        76.973902,
+        11.007883
+      ],
+      [
+        76.973902,
+        11.008117
+      ]
+    ],
+    "boundaryVertices": [
+      {
+        "label": "NW",
+        "coords": [
+          76.973902,
+          11.008117
+        ]
+      },
+      {
+        "label": "NE",
+        "coords": [
+          76.974098,
+          11.008117
+        ]
+      },
+      {
+        "label": "SE",
+        "coords": [
+          76.974098,
+          11.007883
+        ]
+      },
+      {
+        "label": "SW",
+        "coords": [
+          76.973902,
+          11.007883
+        ]
+      }
+    ]
+  }
+]
